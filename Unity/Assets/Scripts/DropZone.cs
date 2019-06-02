@@ -23,7 +23,6 @@ public class DropZone : MonoBehaviour, IDropHandler
         if(d != null){
             d.parentToReturnTo = this.transform;
         }
-        this.transform.Rotate(new Vector3(0,0,30) * Time.deltaTime);
         canRotatePlayer = true;
         StartCoroutine(Wait(3.0f));
     }
